@@ -1,0 +1,32 @@
+{
+  "name": "tictactoe-classic-reducer",
+  "version": "0.1.0-3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register 'tests/**/*.ts'",
+    "build": "npm run clean && tsc",
+    "clean": "rm dist/ -rf",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "tictactoe",
+    "game",
+    "reducer"
+  ],
+  "author": "Sagar Patke <sagarpatke@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.17",
+    "@types/mocha": "^8.2.2",
+    "@types/uuid": "^8.3.0",
+    "chai": "^4.3.4",
+    "mocha": "^8.3.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "deepfreeze": "^2.0.0",
+    "uuid": "^8.3.2"
+  }
+}
